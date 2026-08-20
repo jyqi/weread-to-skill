@@ -1,0 +1,4 @@
+interface:
+  display_name: "微信读书炼成 Skill"
+  short_description: "把微信读书划线与想法编译成可追溯的个人书籍 Skill"
+  default_prompt: "Use $weread-to-skill to turn one of my WeRead books into a traceable personal skill."

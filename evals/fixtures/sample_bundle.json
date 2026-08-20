@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "fetched_at": "2026-08-20T00:00:00+00:00",
+  "skill_version": "1.0.4",
+  "book": {
+    "bookId": "sample-book-1",
+    "title": "测试书",
+    "author": "示例作者"
+  },
+  "chapters": [
+    {
+      "chapterUid": 1,
+      "chapterIdx": 1,
+      "title": "第一章"
+    },
+    {
+      "chapterUid": 2,
+      "chapterIdx": 2,
+      "title": "第二章"
+    }
+  ],
+  "progress": {
+    "bookId": "sample-book-1",
+    "book": {
+      "progress": 45,
+      "recordReadingTime": 3600
+    }
+  },
+  "sources": [
+    {
+      "id": "h:sample-1",
+      "type": "highlight",
+      "chapter_uid": 1,
+      "chapter_index": 1,
+      "chapter_title": "第一章",
+      "text": "先设计一个能够验证关键假设的小实验。",
+      "range": "10-30",
+      "created_at": 1787184000
+    },
+    {
+      "id": "r:sample-2",
+      "type": "reader_review",
+      "chapter_uid": 1,
+      "chapter_index": 1,
+      "chapter_title": "第一章",
+      "text": "我经常急着做完整方案，应该先验证最不确定的部分。",
+      "abstract": "先设计一个能够验证关键假设的小实验。",
+      "range": "10-30",
+      "created_at": 1787184060
+    }
+  ],
+  "coverage": {
+    "basis": "weread-personal-traces",
+    "has_full_text": false,
+    "chapter_count": 2,
+    "covered_chapter_count": 1,
+    "highlight_count": 1,
+    "review_count": 1,
+    "popular_highlight_count": 0
+  },
+  "source_fingerprint": "sample-fingerprint"
+}

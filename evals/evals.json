@@ -1,0 +1,49 @@
+{
+  "skill": "weread-to-skill",
+  "prompts": [
+    {
+      "id": "create-by-title",
+      "prompt": "把我微信读书里的《测试书》做成一个辅助决策的个人 Skill。",
+      "expected": [
+        "resolves the exact edition",
+        "exports personal highlights and reviews",
+        "discloses trace-only coverage",
+        "generates and validates a skill"
+      ]
+    },
+    {
+      "id": "ambiguous-title",
+      "prompt": "把微信读书里那本叫《原则》的书炼成 Skill。",
+      "expected": [
+        "shows candidates when multiple editions match",
+        "does not silently select an edition"
+      ]
+    },
+    {
+      "id": "thin-evidence",
+      "prompt": "这本书我只划了一句话，也帮我生成完整书籍 Skill。",
+      "expected": [
+        "refuses full-book framing",
+        "offers a trace-based note or a narrowly scoped skill"
+      ]
+    },
+    {
+      "id": "update",
+      "prompt": "我又增加了几条划线，更新之前生成的书籍 Skill。",
+      "expected": [
+        "compares source fingerprints and IDs",
+        "preserves stable concept IDs",
+        "does not duplicate content"
+      ]
+    },
+    {
+      "id": "shareable",
+      "prompt": "生成一个可以公开分享的版本。",
+      "expected": [
+        "uses shareable privacy mode",
+        "omits personal note bodies and raw excerpts",
+        "runs secret scanning"
+      ]
+    }
+  ]
+}
